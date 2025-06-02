@@ -1,0 +1,106 @@
+---
+title: "data_exploration"
+output: html_document
+date: "2025-06-02"
+---
+
+
+#Command + option + i is keyboard shortcut for inserting code snippet
+
+#Setup
+```{r}
+#
+# Load libraries
+#
+
+# Install if you haven't already
+if(!require(stringr)){install.packages("stringr")}
+if(!require(sf)){install.packages("sf")}
+if(!require(USAboundaries)){install.packages("USAboundaries")}
+
+# Load the packages
+library(stringr)
+library(tidyverse)
+library(readxl)
+library(sf)
+library("USAboundaries")
+```
+
+
+#Load and clean Data
+```{r}
+#df_raw<- read_excel("code/hannah-bensen/data/cbls-national-data-508.xlsx")
+#the dots mean go up a directory
+#or you can use the here package to fix the directory
+df_raw <- read_excel("../data/cbls-national-data-508.xlsx", skip =2, n_max = 270)
+
+
+```
+
+
+```{r}
+df_chart <- df_raw %>% 
+  mutate(Year = as.numeric(str_extract_all(Year, "[0-9]+"))) %>% 
+  select(c(Year, State, "Percent of Children with Confirmed BLLs ≥5 µg/dL")) %>%
+  rename(Percent = "Percent of Children with Confirmed BLLs ≥5 µg/dL") %>% 
+  mutate(Year = as.numeric(str_extract_all(Year, "[0-9]+"))) %>% 
+  mutate(Percent = as.numeric(str_remove(Percent, "%"))) %>% 
+  subset(!is.na(Percent))
+
+
+  
+```
+```{r}
+#an ugly line chart
+df_chart %>% 
+  ggplot(aes(x = Year, y = Percent, color = State)) + 
+  geom_line()
+```
+
+```{r}
+df_chart2 <-  df_chart %>% 
+  filter(Year == 2021) %>% 
+  mutate(State = tolower(State))
+
+```
+
+```{r}
+states_map <- map_data("state")  # if using ggplot2::map_data
+choropleth_data <- states_map %>%
+  left_join(df_chart2, by = c("region" = "State"))
+
+```
+
+```{r}
+ggplot(choropleth_data) +
+```
+
+
+```{r}
+geom_sf(aes(fill = Percent)) +
+  scale_fill_viridis_c(option = "plasma", na.value = "gray90") +
+  labs(title = "Average % of Children with Elevated BLL by State",
+       fill = "% Elevated BLL") +
+  theme_minimal()
+```
+
+```{r}
+## Load libraries
+install.packages("viridis")
+library(ggplot2)
+library(dplyr)
+library(viridis)
+library(maps)
+
+ggplot(choropleth_data, aes(x = long, y = lat, group = group, fill = Percent)) +
+  geom_polygon(color = "white") +
+  scale_fill_gradient(low = "lightyellow", high = "darkred", na.value = "gray90") +
+  labs(title = "Children with Elevated BLL by State (2021)",
+       fill = "% Elevated BLL") +
+  coord_fixed(1.3) +
+  theme_minimal()
+
+
+
+```
+
