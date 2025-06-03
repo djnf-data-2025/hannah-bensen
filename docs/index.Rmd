@@ -7,18 +7,19 @@ editor_options:
     wrap: sentence
 ---
 
-A demo notebook for Dow Jones News Fund data interns
+~~A demo notebook for Dow Jones News Fund data interns~~
 
-During the week’s training, you will work on a project called Investigate Your Community to produce detailed story pitches relevant to their summer internship positions.
-The goal is to have the students research a topic relevant to your newsroom so they can get to work immediately at the internship.
+~~During the week’s training, you will work on a project called Investigate Your Community to produce detailed story pitches relevant to their summer internship positions. The goal is to have the students research a topic relevant to your newsroom so they can get to work immediately at the internship.~~
 
-Here are some examples from last year’s DJNF data journalism training:
+~~Here are some examples from last year’s DJNF data journalism training:~~
 
-Hannah Rosenberger, at ASI Media/Counselor magazine, produced this analysis on name, image and likeness trends: <https://hrosenberger.github.io/ASI-NIL-Project/>
+~~Hannah Rosenberger, at ASI Media/Counselor magazine, produced this analysis on name, image and likeness trends: <https://hrosenberger.github.io/ASI-NIL-Project/>~~
 
-Shifra Dayak, an intern at the Connecticut Mirror, produced this analysis of environment spill data: <https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html>.
+~~Shifra Dayak, an intern at the Connecticut Mirror, produced this analysis of environment spill data: <https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html>.~~
 
-Michael Zhang, an intern at the Houston Landing, explored local election data: <https://michaelzhangreporter.github.io/Houston_Campaign_Finance/>
+~~Michael Zhang, an intern at the Houston Landing, explored local election data: <https://michaelzhangreporter.github.io/Houston_Campaign_Finance/>~~
+
+**#rsw comment: cut the template and focus on your project. incorporate the newsroom notes into your narrative##**
 
 Here's what your newsroom suggested for a project I'm afraid we don't have a specific data set or topic for Hannah Bensen to examine.
 We're continuing to work on projects related to long-term health effects of lead and government accountability related to cleanup regarding lead paint.
@@ -32,35 +33,44 @@ This notebook helps you get started
 
 # Story Pitch
 
+*What the story's about:* This story is about trend in children Blood Lead Levels (BLL) in the last few years.
+While BLL levels have generally trended down in the last few decades, thousands of children across all states still suffer from elevated BLL levels.
 
-*What the story's about:* This story is about trend in children Blood Lead Levels (BLL) in the last few years. While BLL levels have generally trended down in the last few decades, thousands of children across all states still suffer from elevated BLL levels. 
+The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects.
+Up until 2012, 10 micrograms of lead per deciliter of blood (µg/dL) was used to indicate that a child’s BLL was of concern.
+Since then, research has shown that cognitive and behavioral issues can occur in children with BLLs greater than or equal to 5 µg/dL, making it the new reference number to identify children who have been exposed to lead and require case management.
+However, few states test many children for elevated BLL - many states only test 25% of children or less.
 
-The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects. Up until 2012, 10 micrograms of lead per deciliter of blood (µg/dL) was used to indicate that a child’s BLL was of concern. Since then, research has shown that cognitive and behavioral issues can occur in children with BLLs greater than or equal to 5 µg/dL, making it the new reference number to identify children who have been exposed to lead and require case management. However, few states test many children for elevated BLL - many states only test 25% of children or less. 
+*Why now:* I'm not sure - still need to explore this.
+**#rsw comment: children's health and public health is always newsworthy, especially in a time of federal budget cuts of health monitoring exposes society to greater risk**
 
-*Why now:* I'm not sure - still need to explore this. 
+*Three sources:* TBD.
 
-*Three sources:* TBD. 
+*Potential Impact:* Still exploring this, but elevated BLL levels in children can result in lower IQ, lifetime earnings, and other negative consequences.
 
-*Potential Impact:* Still exploring this, but elevated BLL levels in children can result in lower IQ, lifetime earnings, and other negative consequences. 
+*Things that surprised me/findings:*
 
-*Things that surprised me/findings:* 
+The states with the biggest percentage point drops in children with BLL above 5 ug/dl from 2017 to 2021 are Kansas, Louisiana, Illinois, Alaska, and Wisconsin.
+As I wrote this, it occurred to me that these are *percentage point* differences and not *percent* differences; I might consider highlighting the latter.
+Thoughts?
+**#rsw comment: so these states are showing the greatest improvement. I would calculate a percentage change in the 2017-2021 difference**
 
-The states with the biggest percentage point drops in children with BLL above 5 ug/dl from 2017 to 2021 are Kansas, Louisiana, Illinois, Alaska, and Wisconsin. As I wrote this, it occurred to me that these are *percentage point* differences and not *percent* differences; I might consider highlighting the latter. Thoughts? 
+Only 4 states (Mississippi, West Virginia, New Jersey, Delaware) had an increase in BLL levels in that timeframe.
+**#rsw comment: wow. NJ and DE are both heavily industrialized states that have major chemical and manufacturers. They are also blue states.**
 
-Only 4 states (Mississippi, West Virginia, New Jersey, Delaware) had an increase in BLL levels in that timeframe. 
+I think it would be interesting to consider what factors might be driving the decrease in BLL levels in the above timeframe.
+**#rsw comment: look at industries that tend to produce lead as a byproduct - petrochemicals: waste incinerators, utilities, and lead-acid battery manufacturers. <https://www.epa.gov/lead-air-pollution/basic-information-about-lead-air-pollution#>:\~:text=At%20the%20national%20level%2C%20major,usually%20found%20near%20lead%20smelters.**
 
-I think it would be interesting to consider what factors might be driving the decrease in BLL levels in the above timeframe. 
+*Context:* Generally speaking, the factors driving declining BLL levels in children in states across the country are driven by a combination of successful federal regulations, dedicated state and local prevention programs, improved surveillance and case management, and increased public awareness regarding lead exposure and prevention.
 
+*Visualizations:* I currently have two charts: -A line chart showing the states with the biggest decline and biggest increase children above a certain BLL treshold considered harmful by the CDC.
+-A choropleth map showing BLL levels by state.
 
-*Context:* Generally speaking, the factors driving declining BLL levels in children in states across the country are driven by a combination of successful federal regulations, dedicated state and local prevention programs, improved surveillance and case management, and increased public awareness regarding lead exposure and prevention. 
-
-*Visualizations:*
-I currently have two charts: 
--A line chart showing the states with the biggest decline and biggest increase children above a certain BLL treshold considered harmful by the CDC. 
--A choropleth map showing BLL levels by state. 
-
-
-However, I don't think the line chart is that compelling. I welcome your feedback on how to make it more interesting. The choropleth map is nice-ish, but data are missing from a lot of states, making it pretty bare. Further, the states with the highest percent of children over the 5 ug/dl BLL threshold (Rhode Island and New Jersey) are really small and hard to see on the map. I welcome your feedback on how to make this visualization more compelling, too. 
+However, I don't think the line chart is that compelling.
+I welcome your feedback on how to make it more interesting.
+The choropleth map is nice-ish, but data are missing from a lot of states, making it pretty bare.
+Further, the states with the highest percent of children over the 5 ug/dl BLL threshold (Rhode Island and New Jersey) are really small and hard to see on the map.
+I welcome your feedback on how to make this visualization more compelling, too.
 
 # Analysis of results, next steps
 
@@ -132,6 +142,11 @@ BLLs ≥45 µg/dL: This is extremely dangerous and requires immediate medical at
 
 # Clean data
 
+the code chunk fails for me here.
+the column name doesn't exist exactly as written.
+The issue is likely with the special characters (≥ and µ) in the column name.
+I would run janitor::clean_names after importing df_raw and then redo the mutate-renaming sequence below
+
 ```{r message=FALSE, warning=FALSE}
  df_5BLL <- df_raw %>% 
   #Make Year numeric
@@ -145,8 +160,6 @@ BLLs ≥45 µg/dL: This is extremely dangerous and requires immediate medical at
 
 
 ```
-
-
 
 # Data exploration: states with most dangerous levels
 
@@ -165,7 +178,8 @@ df_5BLL %>%
 
 Write down questions you want answered:
 
-What are the states that had the biggest decrease over 5 years - from 2017 to 2021 - in  percentage of children with confirmed BLL over the 5 µg/dL? 
+What are the states that had the biggest decrease over 5 years - from 2017 to 2021 - in percentage of children with confirmed BLL over the 5 µg/dL?
+
 ```{r}
 df_BLL_wide <- df_5BLL %>% 
   #Widen df
@@ -182,15 +196,17 @@ df_BLL_wide <- df_5BLL %>%
 ```
 
 #These states had the biggest decline in percentage of children with confirmed BLL over 5 µg/dL from 2017 to 2021
+
 ```{r}
 head(df_BLL_wide, 5)  # Display the first 5 rows
 
 ```
+
 #These states had the biggest increase in percentage of children with confirmed BLL over 5 µg/dL from 2017 to 2021
+
 ```{r}
 tail(df_BLL_wide, 4)  # Display the last 5 rows
 ```
-
 
 ```{r}
 #Plot the states with biggest decrease and biggest decrease
@@ -214,7 +230,6 @@ df_map <-  df_5BLL %>%
 
 ```
 
-
 ```{r}
 states_map <- map_data("state")  # if using ggplot2::map_data
 map_data <- states_map %>%
@@ -233,7 +248,6 @@ ggplot(map_data, aes(x = long, y = lat, group = group, fill = BLL5)) +
   theme_minimal() + 
    xlab("") + ylab("")
 ```
-
 
 # Data Details (written by Rob)
 
