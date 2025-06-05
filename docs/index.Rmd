@@ -7,72 +7,60 @@ editor_options:
     wrap: sentence
 ---
 
-~~A demo notebook for Dow Jones News Fund data interns~~
-
-~~During the week’s training, you will work on a project called Investigate Your Community to produce detailed story pitches relevant to their summer internship positions. The goal is to have the students research a topic relevant to your newsroom so they can get to work immediately at the internship.~~
-
-~~Here are some examples from last year’s DJNF data journalism training:~~
-
-~~Hannah Rosenberger, at ASI Media/Counselor magazine, produced this analysis on name, image and likeness trends: <https://hrosenberger.github.io/ASI-NIL-Project/>~~
-
-~~Shifra Dayak, an intern at the Connecticut Mirror, produced this analysis of environment spill data: <https://shifradayak.github.io/DJNF_Merrill/ct_env_spills.html>.~~
-
-~~Michael Zhang, an intern at the Houston Landing, explored local election data: <https://michaelzhangreporter.github.io/Houston_Campaign_Finance/>~~
-
-**#rsw comment: cut the template and focus on your project. incorporate the newsroom notes into your narrative##**
-
-Here's what your newsroom suggested for a project I'm afraid we don't have a specific data set or topic for Hannah Bensen to examine.
-We're continuing to work on projects related to long-term health effects of lead and government accountability related to cleanup regarding lead paint.
-We also have several police-use-of-force stories underway and are nearing completion on one related to police-surveillance tools and analytics.
-Aarushi has talked to Hannah about the pitch process and our interests so Hannah may be looking into a few ideas.
-
-Blood Lead Levels (µg/dL) among U.S.
-Children \<72 Months of Age, by State, Year, and Blood Lead Level (BLL)
-
-This notebook helps you get started
-
 # Story Pitch
 
-*What the story's about:* This story is about trend in children Blood Lead Levels (BLL) in the last few years.
-While BLL levels have generally trended down in the last few decades, thousands of children across all states still suffer from elevated BLL levels.
+*What the story's about:* This story is about the trend in children Blood Lead Levels (BLL) in the last few years across the county and in specific states of interest such as Maryland. 
 
-The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects.
-Up until 2012, 10 micrograms of lead per deciliter of blood (µg/dL) was used to indicate that a child’s BLL was of concern.
-Since then, research has shown that cognitive and behavioral issues can occur in children with BLLs greater than or equal to 5 µg/dL, making it the new reference number to identify children who have been exposed to lead and require case management.
-However, few states test many children for elevated BLL - many states only test 25% of children or less.
+While BLL levels have generally trended down in the last few decades across the country, thousands of children across all states still suffer from elevated BLL levels.
 
-*Why now:* I'm not sure - still need to explore this.
-**#rsw comment: children's health and public health is always newsworthy, especially in a time of federal budget cuts of health monitoring exposes society to greater risk**
+The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects.Up until 2012, 10 micrograms of lead per deciliter of blood (10 µg/dL) was used to indicate that a child’s BLL was of concern. Since then, research has shown that cognitive and behavioral issues can occur in children with BLLs greater than or equal to 5 µg/dL. In 2021, 3.5 ug/dL became the new reference number to identify children who have been exposed to lead and require case management.\
 
-*Three sources:* TBD.
+**For the purpose of this pitch, I will consider 5 µg/dL to be the threshold for "elevated" BLL.** 
 
-*Potential Impact:* Still exploring this, but elevated BLL levels in children can result in lower IQ, lifetime earnings, and other negative consequences.
+Despite the fact that many children experience elevated BLL, few states test all children for elevated BLL, leading to holes in the data. However, the state of Maryland implemented a new law in 2015 and 2016 which mandates that all children at 12 months and 24 months must be tested for lead, leading to a noteable increase in the number of children tested. 
+
+*Why now:* Children's health and public health is always newsworthy. Further, federal budget cuts of health monitoring leads to more ambiguity around the causes and impacts of elevated BLL. Maryland's department of the environment webpage, for example - which ostensibly was a place to obtain Maryland's child blood lead level data - is not usable at the moment due to federal budget cuts. 
+
+![Maryland's data warning on their website.](/Users/hannahbensen/code/hannah-bensen/data/data_warning.png)
+
+
+*Three sources:*
+1. The Maryland Department of Environment's Lead Registry Annual Surveillance Report contains data for Maryland on blood lead tests done in the state. Reports go back until at least 2010, if not earlier. [Here](https://mde.maryland.gov/programs/land/LeadPoisoningPrevention/Documents/2023%20MDE%20Lead%20Poisoning%20Prevention%20Program%20Surveillance%20Report.pdf) is the 2023 report.\
+2. The Maryland Department of Health released a [2022 Report](https://health.maryland.gov/phpa/OEHFP/EH/Documents/MDLeadTestingEvaluation_122022.pdf) evaluating the policy impact of Maryland's universal childhood blood lead testing requirement. The report also provides useful information on what Maryland is doing to mitigate elevated blood levels, the impact of lead in children, and sources of lead in Maryland (mainly lead paint from pre-1979 homes)\
+3.TBD
+
+*Potential Impact:* Elevated BLL levels in children can result in lower IQ, lifetime earnings, and other negative consequences. According to Maryland's department of health report, lead paint is a preventable hazard that is "highly related to historical inequities in housing policy." 
 
 *Things that surprised me/findings:*
 
-The states with the biggest percentage point drops in children with BLL above 5 ug/dl from 2017 to 2021 are Kansas, Louisiana, Illinois, Alaska, and Wisconsin.
-As I wrote this, it occurred to me that these are *percentage point* differences and not *percent* differences; I might consider highlighting the latter.
-Thoughts?
-**#rsw comment: so these states are showing the greatest improvement. I would calculate a percentage change in the 2017-2021 difference**
+The states with the biggest percentage drops in children with BLL above 5 ug/dl from 2017 to 2021 are:\
+1. Nevada\
+2. New Jersey\
+3. Alaska\
+4. Wisconsin\
+5. Michigan\
 
-Only 4 states (Mississippi, West Virginia, New Jersey, Delaware) had an increase in BLL levels in that timeframe.
-**#rsw comment: wow. NJ and DE are both heavily industrialized states that have major chemical and manufacturers. They are also blue states.**
+The states with the highest percentage of children with elevated BLL in 2021 are:\
+1. Rhode Island\
+2. New Jersey\
+3. Wisconsin\
+4. New Hampshire\
+5. Connecticut\
 
-I think it would be interesting to consider what factors might be driving the decrease in BLL levels in the above timeframe.
+
+It will also be interesting to consider what factors might be driving the decrease in BLL levels in the above timeframe. (I still need to look into this more).\n
 **#rsw comment: look at industries that tend to produce lead as a byproduct - petrochemicals: waste incinerators, utilities, and lead-acid battery manufacturers. <https://www.epa.gov/lead-air-pollution/basic-information-about-lead-air-pollution#>:\~:text=At%20the%20national%20level%2C%20major,usually%20found%20near%20lead%20smelters.**
 
 *Context:* Generally speaking, the factors driving declining BLL levels in children in states across the country are driven by a combination of successful federal regulations, dedicated state and local prevention programs, improved surveillance and case management, and increased public awareness regarding lead exposure and prevention.
 
-*Visualizations:* I currently have two charts: -A line chart showing the states with the biggest decline and biggest increase children above a certain BLL treshold considered harmful by the CDC.
--A choropleth map showing BLL levels by state.
+*Visualizations:* I currently have three charts.
 
-However, I don't think the line chart is that compelling.
-I welcome your feedback on how to make it more interesting.
-The choropleth map is nice-ish, but data are missing from a lot of states, making it pretty bare.
-Further, the states with the highest percent of children over the 5 ug/dl BLL threshold (Rhode Island and New Jersey) are really small and hard to see on the map.
-I welcome your feedback on how to make this visualization more compelling, too.
+-A bar chart showing the states with the biggest percentage decline in the number of children with elevated BLL from 2017 to 2021.\
+-A choropleth map showing BLL levels by state.\
+-A choropleth map of Maryland showing their 2023 BLL levels of 5 ug/dL and 5-9 ug/dL. This map was made in datawrapper. 
 
-# Analysis of results, next steps
+
+# Analysis
 
 # Load software libraries
 
@@ -90,24 +78,21 @@ library(ggplot2)
 library(dplyr)
 library(viridis)
 library(maps)
+library(ellmer)
 
 
 ```
 
 # Load your data
 
-2024
+2024 CBLS Data
 
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 
-# 
-# YOUR_DATA <- read.csv("../data/XXXXX.csv") |> 
-#     clean_names()
+ df_raw <- read_excel("../data/cbls-national-data-508.xlsx", skip=2, n_max = 270) %>% 
+      clean_names()
 
-# data1 <- read_excel("../data/cbls-national-data-508.xlsx", skip=2, n_max = 270) |>
-#      clean_names()
-
-df_raw <- read_excel("../data/cbls-national-data-508.xlsx", skip =2, n_max = 270)
+#df_raw <- read_excel("../data/cbls-national-data-508.xlsx", skip =2, n_max = 270)
   
   
 
@@ -140,26 +125,133 @@ BLLs 20-24 µg/dL: This is a dangerous level of lead exposure.
 BLLs 25-44 µg/dL: This is a significantly dangerous level and poses serious health risks.
 BLLs ≥45 µg/dL: This is extremely dangerous and requires immediate medical attention.
 
-# Clean data
 
-the code chunk fails for me here.
-the column name doesn't exist exactly as written.
-The issue is likely with the special characters (≥ and µ) in the column name.
-I would run janitor::clean_names after importing df_raw and then redo the mutate-renaming sequence below
+# Obtain data
+```{r}
+#Upload screenshot of Maryland's Blood Level Level data from their 2023 Lead Registry Report
+BLL23 <- google_upload(path = "/Users/hannahbensen/code/hannah-bensen/data/BLL_2023.png")
+```
 
-```{r message=FALSE, warning=FALSE}
- df_5BLL <- df_raw %>% 
-  #Make Year numeric
-  mutate(Year = as.numeric(str_extract_all(Year, "[0-9]+"))) %>% 
-  #Select key variables
-  select(c(Year, State, "Percent of Children with Confirmed BLLs ≥5 µg/dL")) %>%
-  #Rename key variable
-  rename(BLL5 = "Percent of Children with Confirmed BLLs ≥5 µg/dL") %>%
-  #Make BLL variable numeric
-  mutate(BLL5 = as.numeric(str_remove(BLL5, "%"))) 
+
+```{r include=FALSE}
+#Use LLM to extract data from 2023 Maryland surveillance report
+#Commented out becuase I copy the output into a dataframe in a code chunk below. 
+# Set the model BLL_2023.png
+# gemini_chat <- chat_google_gemini(model="gemini-2.5-flash-preview-04-17")
+# 
+# extract_csv_gemini <- gemini_chat$chat("Could you extract the table called Table Five: Blood Lead Testing of Children 0-72 Months by Jurisdiction from this link? No yapping, just export the data such that it can be used in an R dataframe", BLL23)
+
+```
+
+
+
+```{r include=FALSE}
+#Copy output from LLM into R, clean dataframe 
+
+text_data <- "
+County,Population of Children,Number Tested,Percent Tested,Blood Lead Level >=5 ug/dL Incidence Number,Blood Lead Level >=5 ug/dL Incidence Percent,Blood Lead Level >=5 ug/dL Prevalence Number,Blood Lead Level >=5 ug/dL Prevalence Percent,Blood Lead Level 5-9 ug/dL Incidence Number,Blood Lead Level 5-9 ug/dL Incidence Percent,Blood Lead Level 5-9 ug/dL Prevalence Number,Blood Lead Level 5-9 ug/dL Prevalence Percent,Blood Lead Level >=10 ug/dL Incidence Number,Blood Lead Level >=10 ug/dL Incidence Percent,Blood Lead Level >=10 ug/dL Prevalence Number,Blood Lead Level >=10 ug/dL Prevalence Percent
+Allegany,3280,1227,37.4,47,1.4,31,0.9,36,1.1,23,0.7,11,0.3,8,0.2
+Anne Arundel,37364,10673,28.6,72,0.2,27,0.1,68,0.2,24,0.1,4,0.0,3,0.0
+Baltimore,50559,17535,34.7,186,0.4,82,0.2,143,0.3,56,0.1,43,0.1,26,0.1
+Baltimore City,35556,13859,39.0,363,1.0,195,0.5,297,0.8,153,0.4,66,0.2,42,0.1
+Calvert,5429,1327,24.4,4,0.1,3,0.1,3,0.1,2,0.0,1,0.0,1,0.0
+Caroline,2262,701,31.0,7,0.3,3,0.1,5,0.2,3,0.1,2,0.1,0,0.0
+Carroll,10318,3113,30.2,51,0.5,23,0.2,41,0.4,13,0.1,10,0.1,10,0.1
+Cecil,6305,1640,26.0,37,0.6,10,0.2,32,0.5,9,0.1,5,0.1,1,0.0
+Charles,10291,2921,28.4,24,0.2,6,0.1,19,0.2,6,0.1,5,0.0,0,0.0
+Dorchester,1893,562,29.7,10,0.5,9,0.5,8,0.4,8,0.4,2,0.1,1,0.1
+Frederick,18486,5685,30.8,37,0.2,20,0.1,26,0.1,16,0.1,11,0.1,4,0.0
+Garrett,1289,255,19.8,2,0.2,1,0.1,1,0.1,0,0.0,1,0.1,1,0.1
+Harford,14994,4547,30.3,27,0.2,16,0.1,22,0.1,13,0.1,5,0.0,3,0.0
+Howard,18807,4274,22.7,36,0.2,21,0.1,28,0.1,15,0.1,8,0.0,6,0.0
+Kent,786,200,25.4,5,0.6,3,0.4,3,0.4,2,0.3,2,0.3,1,0.1
+Montgomery,63134,23308,36.9,147,0.2,70,0.1,106,0.2,51,0.1,41,0.1,19,0.0
+Prince George's,56767,21134,37.2,134,0.2,51,0.1,111,0.2,45,0.1,23,0.0,6,0.0
+Queen Anne's,29523,907,3.1,5,0.0,2,0.0,4,0.0,1,0.0,1,0.0,1,0.0
+Saint Mary's,7464,2215,29.7,11,0.1,4,0.1,10,0.1,3,0.0,1,0.0,1,0.0
+Somerset,1148,440,38.3,8,0.7,7,0.6,5,0.4,4,0.3,3,0.3,3,0.3
+Talbot,1865,463,24.8,7,0.4,3,0.2,5,0.3,3,0.2,2,0.1,0,0.0
+Washington,8863,2536,28.6,45,0.5,23,0.3,34,0.4,15,0.2,11,0.1,8,0.1
+Wicomico,6811,2603,38.2,44,0.6,19,0.3,37,0.5,14,0.2,7,0.1,5,0.1
+Worcester,2357,831,35.3,9,0.4,2,0.1,8,0.3,2,0.1,1,0.0,0,0.0
+Statewide,371258,122956,33.1,1318,0.4,631,0.2,1052,0.3,481,0.1,266,0.1,150,0.0
+"
+
+bll_df <- read.csv(textConnection(text_data), check.names = FALSE)
+
+#Select variables of interest
+bll_chart <- bll_df %>% 
+  select(County, 
+         `Blood Lead Level >=5 ug/dL Incidence Percent`, 
+         `Blood Lead Level 5-9 ug/dL Incidence Percent`, 
+         `Blood Lead Level >=10 ug/dL Incidence Percent`
+         ) %>% 
+  mutate(County = case_when(
+    County == "Saint Mary's" ~ "St. Mary's", 
+    County == "Baltimore" ~ "Baltimore County", 
+    TRUE ~ County))
+  
+
+
 
 
 ```
+
+```{r}
+#Write dataframes
+readr::write_csv(bll_df, file = "/Users/hannahbensen/code/hannah-bensen/data/BLL_2023.csv")
+readr::write_csv(bll_chart, file = "/Users/hannahbensen/code/hannah-bensen/data/BLL_chart_2023.csv")
+```
+
+
+# Clean CBLS national data
+
+```{r message=FALSE, warning=FALSE}
+ df_5BLL <- df_raw %>% 
+  #Make Year numeric 
+  mutate(#replace all "SDs" with 1. "SD - Indicates non-zero counts fewer than 6 have been suppressed to protect confidentiality." So SD equals something between 1 and 6. Converting to 1 is a conservative estimate
+         across(everything(), ~ifelse(. == "SD", 1, .)), 
+         across(everything(), ~ifelse(. == "-", NA, .))) %>% 
+  mutate(year = as.numeric(str_extract_all(year, "[0-9]+")), 
+         across(-state, as.numeric)) %>% 
+  rowwise() %>% # Apply the sum row by row
+  mutate(min5BLL = sum(c(number_of_children_with_confirmed_bl_ls_5_mg_d_l, 
+                         number_of_children_with_confirmed_bl_ls_10_mg_d_l,
+                         number_of_children_with_confirmed_bl_ls_5_9_mg_d_l, 
+                         number_of_children_with_confirmed_bl_ls_15_19_mg_d_l, 
+                         number_of_children_with_confirmed_bl_ls_25_44_mg_d_l), na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  mutate(min5BLL_pct = min5BLL/number_of_children_tested_72_months_of_age *100) %>% 
+  #Select key variables
+  select(c(year, state, min5BLL, min5BLL_pct, number_of_children_tested_72_months_of_age)) 
+
+
+```
+
+```{r}
+# Calculate the percentage difference
+df_diff <- df_5BLL %>%
+  # Group by state so calculations are done independently for each state
+  group_by(state) %>%
+  # Use summarise to create new rows for each state with the calculated difference
+  summarise(
+    # Get the min5BLL value for 2017
+    min5BLL_2017 = min5BLL[year == 2017],
+    # Get the min5BLL value for 2021
+    min5BLL_2021 = min5BLL[year == 2021],
+    # Calculate the percentage difference
+    # Formula: ((Value_2021 - Value_2017) / Value_2017) * 100
+    # If either 2017 or 2021 value is NA, the difference will also be NA
+    pct_diff = ((min5BLL_2021 - min5BLL_2017) / min5BLL_2017) * 100
+  ) %>%
+  # Ungroup the data frame if you plan to do further operations on the whole frame
+  ungroup() %>% 
+  filter(pct_diff != -100) %>% 
+  arrange(pct_diff)
+
+
+```
+
 
 # Data exploration: states with most dangerous levels
 
@@ -168,10 +260,10 @@ The states with the highest percentage of children with confirmed BLL over the 5
 ```{r}
 df_5BLL %>%  
   #Filter for most recent year in dataset
-  filter(Year == 2021) %>% 
+  filter(year == 2021) %>% 
   #Remove rows with missing values
-  subset(!is.na(BLL5)) %>% 
-  arrange(desc(BLL5)) 
+  subset(!is.na(min5BLL_pct)) %>% 
+  arrange(desc(min5BLL_pct)) 
 ```
 
 # Questions
@@ -181,12 +273,14 @@ Write down questions you want answered:
 What are the states that had the biggest decrease over 5 years - from 2017 to 2021 - in percentage of children with confirmed BLL over the 5 µg/dL?
 
 ```{r}
-df_BLL_wide <- df_5BLL %>% 
+df_BLL_wide_counts <- df_5BLL %>% 
+  select(year, state, min5BLL) %>% 
+  filter(min5BLL>0) %>% 
   #Widen df
-  pivot_wider(names_from = "Year", 
-              values_from = "BLL5") %>% 
+  pivot_wider(names_from = "year", 
+              values_from = "min5BLL") %>% 
   #select State and first and last year
-  select(State, "2017", "2021") %>% 
+  select(state, "2017", "2021") %>% 
   #Drop missing values
   drop_na("2017", "2021") %>% 
   #Calculate difference between 2021 and 2017
@@ -195,37 +289,45 @@ df_BLL_wide <- df_5BLL %>%
 
 ```
 
-#These states had the biggest decline in percentage of children with confirmed BLL over 5 µg/dL from 2017 to 2021
+#These states had the biggest decline in percentage of children with elevated BLL (over 5 µg/dL) from 2017 to 2021 in terms of the count (so, biggest states will be overrepresented). 
 
 ```{r}
-head(df_BLL_wide, 5)  # Display the first 5 rows
+head(df_BLL_wide_counts, 5)  # Display the first 5 rows
 
 ```
 
-#These states had the biggest increase in percentage of children with confirmed BLL over 5 µg/dL from 2017 to 2021
+#These two states had the biggest increase in percentage of children with elevated BL from 2017 to 2021 in terms of counts
 
 ```{r}
-tail(df_BLL_wide, 4)  # Display the last 5 rows
+tail(df_BLL_wide_counts, 2)  # Display the last 5 rows
+```
+#A better way of looking at these data are in percent increases in declines. These states had the biggest percentage point declines in the number children with elevated BLL between 2017 and 2017. Two states - South Carolina and Florida - had a percent increase in the number of children with elevated BLL. 
+```{r}
+head(df_diff, 5)  # Display the last 5 rows
+tail(df_diff, 2)  # Display the last 5 rows
+
 ```
 
+
+#Playing with this map - I want to visualize states with the b
+
 ```{r}
-#Plot the states with biggest decrease and biggest decrease
-df_5BLL %>% 
-  filter(State %in% c( #Biggest decrease states
-                      "Kansas","Louisiana", "Illinois", "Alaska", "Wisconsin",
-                      #Biggest increase states
-                      "Mississippi", "West Virginia", "New Jersey", "Delaware" )) %>% 
-  ggplot(aes(x = Year, y = BLL5, color = State)) + 
-  geom_line()+ 
-  ggtitle("States with elevated Blood Lead Levels for Children") + 
-  xlab("Year") + ylab("Percent of Children with Confirmed BLLs ≥5 µg/dL") + 
+#Plot top 10 states with biggest decrease and biggest decrease in 
+
+df_diff %>%
+  arrange(pct_diff) %>% 
+  head(10) %>% 
+  ggplot(aes(x = reorder(state, pct_diff), y = -pct_diff)) +
+  geom_bar(stat = 'identity', fill = "#99d8c9")+
+  ggtitle("States with largest percentage decrease in elevated Blood Lead Levels for Children") +
+  xlab("State") + ylab("Decline in elevated BLL from 2017 to 2021") +
   theme_minimal()
 ```
 
 ```{r}
 df_map <-  df_5BLL %>% 
-  filter(Year == 2021) %>% 
-  mutate(State = tolower(State))
+  filter(year == 2021) %>% 
+  mutate(state = tolower(state))
   
 
 ```
@@ -233,13 +335,13 @@ df_map <-  df_5BLL %>%
 ```{r}
 states_map <- map_data("state")  # if using ggplot2::map_data
 map_data <- states_map %>%
-  left_join(df_map, by = c("region" = "State")) 
+  left_join(df_map, by = c("region" = "state")) 
 
 ```
 
 ```{r}
 
-ggplot(map_data, aes(x = long, y = lat, group = group, fill = BLL5)) +
+ggplot(map_data, aes(x = long, y = lat, group = group, fill = min5BLL_pct)) +
   geom_polygon(color = "white") +
   scale_fill_gradient(low = "lightyellow", high = "darkred", na.value = "gray90") +
   labs(title = "Children with Elevated Blood Lead Level by State (2021)",
@@ -247,10 +349,10 @@ ggplot(map_data, aes(x = long, y = lat, group = group, fill = BLL5)) +
   coord_fixed(1.3) +
   theme_minimal() + 
    xlab("") + ylab("")
+
 ```
 
-# Data Details (written by Rob)
+<div style="min-height:400px" id="datawrapper-vis-q5PAp"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/q5PAp/embed.js" charset="utf-8" data-target="#datawrapper-vis-q5PAp"></script><noscript><img src="https://datawrapper.dwcdn.net/q5PAp/full.png" alt="" /></noscript></div>
 
-I'd consider converting the SD to 1 and running a sum for all levels above 10 ug/dl.
-"SD - Indicates non-zero counts fewer than 6 have been suppressed to protect confidentiality." So SD equals something between 1 and 6.
-Converting to 1 would be a conservative estimate
+
+

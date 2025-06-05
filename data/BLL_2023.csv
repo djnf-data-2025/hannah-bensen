@@ -1,0 +1,26 @@
+County,Population of Children,Number Tested,Percent Tested,Blood Lead Level >=5 ug/dL Incidence Number,Blood Lead Level >=5 ug/dL Incidence Percent,Blood Lead Level >=5 ug/dL Prevalence Number,Blood Lead Level >=5 ug/dL Prevalence Percent,Blood Lead Level 5-9 ug/dL Incidence Number,Blood Lead Level 5-9 ug/dL Incidence Percent,Blood Lead Level 5-9 ug/dL Prevalence Number,Blood Lead Level 5-9 ug/dL Prevalence Percent,Blood Lead Level >=10 ug/dL Incidence Number,Blood Lead Level >=10 ug/dL Incidence Percent,Blood Lead Level >=10 ug/dL Prevalence Number,Blood Lead Level >=10 ug/dL Prevalence Percent
+Allegany,3280,1227,37.4,47,1.4,31,0.9,36,1.1,23,0.7,11,0.3,8,0.2
+Anne Arundel,37364,10673,28.6,72,0.2,27,0.1,68,0.2,24,0.1,4,0,3,0
+Baltimore,50559,17535,34.7,186,0.4,82,0.2,143,0.3,56,0.1,43,0.1,26,0.1
+Baltimore City,35556,13859,39,363,1,195,0.5,297,0.8,153,0.4,66,0.2,42,0.1
+Calvert,5429,1327,24.4,4,0.1,3,0.1,3,0.1,2,0,1,0,1,0
+Caroline,2262,701,31,7,0.3,3,0.1,5,0.2,3,0.1,2,0.1,0,0
+Carroll,10318,3113,30.2,51,0.5,23,0.2,41,0.4,13,0.1,10,0.1,10,0.1
+Cecil,6305,1640,26,37,0.6,10,0.2,32,0.5,9,0.1,5,0.1,1,0
+Charles,10291,2921,28.4,24,0.2,6,0.1,19,0.2,6,0.1,5,0,0,0
+Dorchester,1893,562,29.7,10,0.5,9,0.5,8,0.4,8,0.4,2,0.1,1,0.1
+Frederick,18486,5685,30.8,37,0.2,20,0.1,26,0.1,16,0.1,11,0.1,4,0
+Garrett,1289,255,19.8,2,0.2,1,0.1,1,0.1,0,0,1,0.1,1,0.1
+Harford,14994,4547,30.3,27,0.2,16,0.1,22,0.1,13,0.1,5,0,3,0
+Howard,18807,4274,22.7,36,0.2,21,0.1,28,0.1,15,0.1,8,0,6,0
+Kent,786,200,25.4,5,0.6,3,0.4,3,0.4,2,0.3,2,0.3,1,0.1
+Montgomery,63134,23308,36.9,147,0.2,70,0.1,106,0.2,51,0.1,41,0.1,19,0
+Prince George's,56767,21134,37.2,134,0.2,51,0.1,111,0.2,45,0.1,23,0,6,0
+Queen Anne's,29523,907,3.1,5,0,2,0,4,0,1,0,1,0,1,0
+Saint Mary's,7464,2215,29.7,11,0.1,4,0.1,10,0.1,3,0,1,0,1,0
+Somerset,1148,440,38.3,8,0.7,7,0.6,5,0.4,4,0.3,3,0.3,3,0.3
+Talbot,1865,463,24.8,7,0.4,3,0.2,5,0.3,3,0.2,2,0.1,0,0
+Washington,8863,2536,28.6,45,0.5,23,0.3,34,0.4,15,0.2,11,0.1,8,0.1
+Wicomico,6811,2603,38.2,44,0.6,19,0.3,37,0.5,14,0.2,7,0.1,5,0.1
+Worcester,2357,831,35.3,9,0.4,2,0.1,8,0.3,2,0.1,1,0,0,0
+Statewide,371258,122956,33.1,1318,0.4,631,0.2,1052,0.3,481,0.1,266,0.1,150,0
