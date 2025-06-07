@@ -1,63 +1,87 @@
 ---
-title: "Hannah Bensen - Investigative Reporting Workshop"
+title: "What Lead Left Behind"
+author: "Hannah Bensen hannahbensen7@gmail.com"
 output: html_document
-date: "2025-05-02"
+date: "2025-06-07"
 editor_options: 
   markdown: 
     wrap: sentence
 ---
 
-# Story Pitch
+Though child Blood Lead Levels (BLL) have trended down in the in the last few decades, the CDC [estimates](https://www.cdc.gov/lead-prevention/php/news-features/updates-blood-lead-reference-value.html#:~:text=The%20BLRV%20is%20a%20population,the%20need%20for%20exposure%20prevention.) that around 500,000 children  U.S. children aged 1-5 (about 2.5% of this population) suffer from elevated BLL levels, defined as greater than 3.5 ug/dL.
 
-*What the story's about:* This story is about the trend in children Blood Lead Levels (BLL) in the last few years across the county and in specific states of interest such as Maryland. 
+Elevated BLL in children can result in lower IQ, learning capacity, lifetime earnings, and other negative consequences. Further, lead-based paint poisoning - one of the most common sources of elevated BLL -  is a preventable hazard that is highly related to historical inequities in housing policy. 
 
-While BLL levels have generally trended down in the last few decades across the country, thousands of children across all states still suffer from elevated BLL levels.
+<iframe title="Percent of Young Children with Elevated Blood Lead Level, 2021" aria-label="Map" id="datawrapper-chart-J8tPH" src="https://datawrapper.dwcdn.net/J8tPH/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="576" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
 
-The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects.Up until 2012, 10 micrograms of lead per deciliter of blood (10 µg/dL) was used to indicate that a child’s BLL was of concern. Since then, research has shown that cognitive and behavioral issues can occur in children with BLLs greater than or equal to 5 µg/dL. In 2021, 3.5 ug/dL became the new reference number to identify children who have been exposed to lead and require case management.\
+<br>
+This story will evaluate Blood Lead Levels in specific states of interest including Maryland. It will consider how BLL is trending in different states and whether these trends are tied to a specific geography (such as Baltimore) a specific demographic group (such as Black communities or low-income people), or a particular source of lead (such as lead-based paint, industrialization, or environmental factors). <br>
 
-**For the purpose of this pitch, I will consider 5 µg/dL to be the threshold for "elevated" BLL.** 
+The state of Maryland has BLL data at the county level for 2023. 
 
-Despite the fact that many children experience elevated BLL, few states test all children for elevated BLL, leading to holes in the data. However, the state of Maryland implemented a new law in 2015 and 2016 which mandates that all children at 12 months and 24 months must be tested for lead, leading to a noteable increase in the number of children tested. 
+<br><br>
 
-*Why now:* Children's health and public health is always newsworthy. Further, federal budget cuts of health monitoring leads to more ambiguity around the causes and impacts of elevated BLL. Maryland's department of the environment webpage, for example - which ostensibly was a place to obtain Maryland's child blood lead level data - is not usable at the moment due to federal budget cuts. 
+<div style="min-height:400px" id="datawrapper-vis-q5PAp"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/q5PAp/embed.js" charset="utf-8" data-target="#datawrapper-vis-q5PAp"></script><noscript><img src="https://datawrapper.dwcdn.net/q5PAp/full.png" alt="" /></noscript></div>
+<br>
+<br>
 
-![Maryland's data warning on their website.](/Users/hannahbensen/code/hannah-bensen/data/data_warning.png)
+
+This story will also evaluate the efficacy of federal and state lead-abatement programs. Maryland, for example, has a few initiatives designed to track and mitigate child lead exposure: 
+
+1. A **mandatory lead testing program** implemented by state law in 2015 and 2016 requires all children at 12 months and 24 months to be tested for lead. This initiative has resulted in a much higher percentage (around 80%) lead testing requirement, resulting in much more complete datasets. Many states do not have mandatory lead testing and thus suffer from a lack of available data or data quality issues. 
+2. Maryland has a [Healthy Homes](https://health.maryland.gov/phpa/OEHFP/EH/pages/healthy-homes.aspx) program focuses on identifying and eliminating health hazards for all residents. Maryland also has a [program](https://health.maryland.gov/phpa/OEHFP/EH/Pages/LeadHomeVisiting.aspx) that helps families who have children with BLL > 3.5 ug/dL remove lead from their homes at no cost to the homeowner or resident. *Possible story angle: Are these programs effective? Why or why not? How do different state initiatives compare to one another, and which are most effective?*
+3. [Maryland's Reduction of Lead Risk in Housing Act](https://www.peoples-law.org/lead-paint-law-information-owners-and-sellers#landlord-duties) requires landlords who rent pre-1978 dwellings to register their properties, fulfill lead-free certification requirements, and pass a Lead Free inspection each time a tenant changes. *Possible story angle: Are landlords complying with this regulation? If not, which populations are being disproportionately impacted?* 
 
 
-*Three sources:*
+
+
+**Note that for the purpose of this pitch, I will consider 5 µg/dL to be the threshold for "elevated" BLL because the CDC data only had data for 5 ug/dL and above for 2017 - 2021.** 
+
+*Context*<br> The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects. Before 2012, at or greater than **10 µg/dL** was the threshold for public intervention. was used to indicate that a child’s BLL was of concern. In 2012, the thresohold was changed to **5 ug/dL**, and in 2021, **3.5 ug/dL** became the new reference number. There is no safe level of lead in blood for children, the CDC says. <br>
+
+
+
+
+*Why now?*<br> Children's health and public health is always newsworthy. Further, federal budget cuts of health monitoring leads to more ambiguity around the causes and impacts of elevated BLL. Maryland's department of the environment webpage, for example - which ostensibly was the place to obtain Maryland's child blood lead level data - is not usable at the moment due to federal budget cuts. 
+
+
+
+
+```{r echo=FALSE, out.width='50%'}
+#Marylands data warning on their website
+knitr::include_graphics("/Users/hannahbensen/code/hannah-bensen/data/data_warning.png")
+```
+<br>Maryland’s data warning on their website.
+
+*Three sources* <br>
 1. The Maryland Department of Environment's Lead Registry Annual Surveillance Report contains data for Maryland on blood lead tests done in the state. Reports go back until at least 2010, if not earlier. [Here](https://mde.maryland.gov/programs/land/LeadPoisoningPrevention/Documents/2023%20MDE%20Lead%20Poisoning%20Prevention%20Program%20Surveillance%20Report.pdf) is the 2023 report.\
 2. The Maryland Department of Health released a [2022 Report](https://health.maryland.gov/phpa/OEHFP/EH/Documents/MDLeadTestingEvaluation_122022.pdf) evaluating the policy impact of Maryland's universal childhood blood lead testing requirement. The report also provides useful information on what Maryland is doing to mitigate elevated blood levels, the impact of lead in children, and sources of lead in Maryland (mainly lead paint from pre-1979 homes)\
-3.TBD
+3. A Congressional Research Service report from 2013 titled "[Lead-Based Paint Poisoning Prevention: Summary of Federal Mandates and Financial Assistance for Reducing Hazards in Housing](https://www.congress.gov/crs-product/RS21688?q=%7B%22search%22%3A%22blood+lead+level%22%7D&s=1&r=8)" outlines federal legislative efforts to mitigate lead-based paint poisoning. 
 
-*Potential Impact:* Elevated BLL levels in children can result in lower IQ, lifetime earnings, and other negative consequences. According to Maryland's department of health report, lead paint is a preventable hazard that is "highly related to historical inequities in housing policy." 
 
-*Things that surprised me/findings:*
+*Potential Impact*<br> Elevated BLL levels in children can result in lower IQ, lifetime earnings, and other negative consequences. According to Maryland's department of health report, lead paint is a preventable hazard that is "highly related to historical inequities in housing policy." This story could impact policy if localities are not complying with state and federal law. <br>
 
-The states with the biggest percentage drops in children with BLL above 5 ug/dl from 2017 to 2021 are:\
-1. Nevada\
-2. New Jersey\
-3. Alaska\
-4. Wisconsin\
-5. Michigan\
+It will also spotlight factors or policies driving the decrease in BLL levels in the above timeframe. Generally speaking, the factors driving declining BLL levels in children in states across the country are driven by a combination of successful federal regulations, dedicated state and local prevention programs, improved surveillance and case management, and increased public awareness regarding lead exposure and prevention. <br>
 
-The states with the highest percentage of children with elevated BLL in 2021 are:\
-1. Rhode Island\
+*Surprising Findings*<br>
+
+The states with the biggest percentage drops in children with BLL at or above 5 ug/dl from 2017 to 2021 are the following. Only two states - Florida and South Carolina - saw an increase in the percentage of children with elevated BLL between 2017 and 2021. 
+
+<iframe title="Percent change in elevated Blood Lead Levels for Children, 2017 to 2021" aria-label="Bar Chart" id="datawrapper-chart-miNtP" src="https://datawrapper.dwcdn.net/miNtP/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="509" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+The states with the highest *number* of children with elevated BLL are shown below. Note that states with a bigger population will have a higher number of children with elevated BLL. <br>
+<iframe title="States with highest number of children with elevated Blood Lead Level in 2021" aria-label="Bar Chart" id="datawrapper-chart-5bKJQ" src="https://datawrapper.dwcdn.net/5bKJQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="380" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+The states with the highest *percentage* of children with BLL at or above 5 ug/dL in 2021 are:\
+1. Rhode Island \
 2. New Jersey\
 3. Wisconsin\
 4. New Hampshire\
 5. Connecticut\
 
-
-It will also be interesting to consider what factors might be driving the decrease in BLL levels in the above timeframe. (I still need to look into this more).\n
-**#rsw comment: look at industries that tend to produce lead as a byproduct - petrochemicals: waste incinerators, utilities, and lead-acid battery manufacturers. <https://www.epa.gov/lead-air-pollution/basic-information-about-lead-air-pollution#>:\~:text=At%20the%20national%20level%2C%20major,usually%20found%20near%20lead%20smelters.**
-
-*Context:* Generally speaking, the factors driving declining BLL levels in children in states across the country are driven by a combination of successful federal regulations, dedicated state and local prevention programs, improved surveillance and case management, and increased public awareness regarding lead exposure and prevention.
-
-*Visualizations:* I currently have three charts.
-
--A bar chart showing the states with the biggest percentage decline in the number of children with elevated BLL from 2017 to 2021.\
--A choropleth map showing BLL levels by state.\
--A choropleth map of Maryland showing their 2023 BLL levels of 5 ug/dL and 5-9 ug/dL. This map was made in datawrapper. 
 
 
 # Analysis
@@ -100,30 +124,36 @@ library(ellmer)
 
 ```
 
-Data details: <https://www.cdc.gov/lead-prevention/php/data/national-surveillance-data.html> BLL - Blood Lead Level, SD - Indicates non-zero counts fewer than 6 have been suppressed to protect confidentiality\
-† - Partial annual data submission\
-\* - Indicates program did not receive childhood lead poisoning prevention funding from CDC\
-‡ - Indicates data not currently available\
-ǁ - Includes all popluation data in table\
-Population estimates data source: CDC NCHS Bridged Race Single Year of Age population (U.S. Census Populations With Bridged Race Categories <https://www.cdc.gov/nchs/nvss/bridged_race.htm#data>).\
-- For years 2017-2019, the data use each respective Vintage year for the denominator data (e.g., 2017 data uses the 2017 Vintage bridged race postcensal population estimates).\
-- For years 2020-2021, due to data availability at the time of processing, Vintage 2020 was used for data years 2020 and 2021.\
-- This will be updated with future data updates to align with pre-2020 years (e.g., 2021 data will use the 2021 Vintage postcensal population estimates, etc.).\
-The current Blood Lead Reference Value of 3.5 µg/dL was enacted by CDC in October 2021.
-Categorizations of blood lead levels above and below this value will be used in blood lead surveillance tables starting with 2022 data.
 
-From ChatGPT: According to the Centers for Disease Control and Prevention (CDC), any blood lead level (BLL) of 5 µg/dL or higher is considered elevated and requires public health actions.
+```{r eval=FALSE, include=FALSE}
+# Data details: <https://www.cdc.gov/lead-prevention/php/data/national-surveillance-data.html> BLL - Blood Lead Level, SD - Indicates non-zero counts fewer than 6 have been suppressed to protect confidentiality\
+# † - Partial annual data submission\
+# \* - Indicates program did not receive childhood lead poisoning prevention funding from CDC\
+# ‡ - Indicates data not currently available\
+# ǁ - Includes all popluation data in table\
+# Population estimates data source: CDC NCHS Bridged Race Single Year of Age population (U.S. Census Populations With Bridged Race Categories <https://www.cdc.gov/nchs/nvss/bridged_race.htm#data>).\
+# - For years 2017-2019, the data use each respective Vintage year for the denominator data (e.g., 2017 data uses the 2017 Vintage bridged race postcensal population estimates).\
+# - For years 2020-2021, due to data availability at the time of processing, Vintage 2020 was used for data years 2020 and 2021.\
+# - This will be updated with future data updates to align with pre-2020 years (e.g., 2021 data will use the 2021 Vintage postcensal population estimates, etc.).\
+# The current Blood Lead Reference Value of 3.5 µg/dL was enacted by CDC in October 2021.
+# Categorizations of blood lead levels above and below this value will be used in blood lead surveillance tables starting with 2022 data.
+# 
+# From ChatGPT: According to the Centers for Disease Control and Prevention (CDC), any blood lead level (BLL) of 5 µg/dL or higher is considered elevated and requires public health actions.
+# 
+# Here's a summary of the danger zones based on the image and your description:
+# 
+# BLLs ≥5 µg/dL: This is the threshold where lead exposure becomes concerning and may require intervention.
+# BLLs ≥10 µg/dL: This level indicates more significant lead exposure and is considered dangerous.
+# BLLs 5-9 µg/dL: While lower than 10 µg/dL, this range is still concerning and above the CDC's reference level.
+# BLLs 10-14 µg/dL: This is a dangerous zone and indicates elevated lead exposure.
+# BLLs 15-19 µg/dL: This level is considered dangerous and requires intervention.
+# BLLs 20-24 µg/dL: This is a dangerous level of lead exposure.
+# BLLs 25-44 µg/dL: This is a significantly dangerous level and poses serious health risks.
+# BLLs ≥45 µg/dL: This is extremely dangerous and requires immediate medical attention.
 
-Here's a summary of the danger zones based on the image and your description:
+```
 
-BLLs ≥5 µg/dL: This is the threshold where lead exposure becomes concerning and may require intervention.
-BLLs ≥10 µg/dL: This level indicates more significant lead exposure and is considered dangerous.
-BLLs 5-9 µg/dL: While lower than 10 µg/dL, this range is still concerning and above the CDC's reference level.
-BLLs 10-14 µg/dL: This is a dangerous zone and indicates elevated lead exposure.
-BLLs 15-19 µg/dL: This level is considered dangerous and requires intervention.
-BLLs 20-24 µg/dL: This is a dangerous level of lead exposure.
-BLLs 25-44 µg/dL: This is a significantly dangerous level and poses serious health risks.
-BLLs ≥45 µg/dL: This is extremely dangerous and requires immediate medical attention.
+
 
 
 # Obtain data
@@ -133,7 +163,7 @@ BLL23 <- google_upload(path = "/Users/hannahbensen/code/hannah-bensen/data/BLL_2
 ```
 
 
-```{r include=FALSE}
+```{r echo=TRUE}
 #Use LLM to extract data from 2023 Maryland surveillance report
 #Commented out becuase I copy the output into a dataframe in a code chunk below. 
 # Set the model BLL_2023.png
@@ -145,7 +175,7 @@ BLL23 <- google_upload(path = "/Users/hannahbensen/code/hannah-bensen/data/BLL_2
 
 
 
-```{r include=FALSE}
+```{r}
 #Copy output from LLM into R, clean dataframe 
 
 text_data <- "
@@ -223,10 +253,15 @@ readr::write_csv(bll_chart, file = "/Users/hannahbensen/code/hannah-bensen/data/
   ungroup() %>% 
   mutate(min5BLL_pct = min5BLL/number_of_children_tested_72_months_of_age *100) %>% 
   #Select key variables
-  select(c(year, state, min5BLL, min5BLL_pct, number_of_children_tested_72_months_of_age)) 
+  select(c(year, state, min5BLL, min5BLL_pct, number_of_children_tested_72_months_of_age)) %>% 
+  mutate(min5BLL = na_if(min5BLL, 0))
 
 
 ```
+
+
+
+
 
 ```{r}
 # Calculate the percentage difference
@@ -258,13 +293,31 @@ df_diff <- df_5BLL %>%
 The states with the highest percentage of children with confirmed BLL over the 5 µg/dL in 2021 are: Rhode Island, New Jersey, New Hampshire, Wisconsin, and Connecticut
 
 ```{r}
-df_5BLL %>%  
+df_5BLL_2021 <- df_5BLL %>%  
   #Filter for most recent year in dataset
   filter(year == 2021) %>% 
   #Remove rows with missing values
   subset(!is.na(min5BLL_pct)) %>% 
-  arrange(desc(min5BLL_pct)) 
+  arrange(desc(min5BLL_pct)) %>% 
+  mutate(min5BLL_pct = round(min5BLL_pct, 2))
+
+df_5BLL_2021_top <- df_5BLL_2021 %>%
+  select(state, min5BLL) %>% 
+  arrange(desc(min5BLL)) %>% 
+  filter(state != "U.S. Totals ǁ") %>% 
+  head(10)
+  
+
+head(df_5BLL_2021, 10)
 ```
+
+```{r}
+
+readr::write_csv( df_5BLL_2021, file = "/Users/hannahbensen/code/hannah-bensen/data/5BLL_counts_and_percents_2021.csv")
+readr::write_csv( df_5BLL_2021_top, file = "/Users/hannahbensen/code/hannah-bensen/data/5BLL_top10_5BLLcounts_2021.csv")
+```
+
+
 
 # Questions
 
@@ -293,7 +346,6 @@ df_BLL_wide_counts <- df_5BLL %>%
 
 ```{r}
 head(df_BLL_wide_counts, 5)  # Display the first 5 rows
-
 ```
 
 #These two states had the biggest increase in percentage of children with elevated BL from 2017 to 2021 in terms of counts
@@ -309,9 +361,8 @@ tail(df_diff, 2)  # Display the last 5 rows
 ```
 
 
-#Playing with this map - I want to visualize states with the b
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 #Plot top 10 states with biggest decrease and biggest decrease in 
 
 df_diff %>%
@@ -325,6 +376,24 @@ df_diff %>%
 ```
 
 ```{r}
+df_diff_export <- df_diff %>% 
+  select(state, pct_diff) %>% 
+  arrange(pct_diff) %>%
+  slice_head(n = 10) %>%
+  bind_rows(df_diff %>% 
+              select(state, pct_diff) %>% 
+              arrange(desc(pct_diff)) %>% slice_head(n = 2)) %>% 
+  mutate(pct_diff = round(pct_diff, 2))
+
+
+```
+
+```{r}
+readr::write_csv( df_diff_export, file = "/Users/hannahbensen/code/hannah-bensen/data/states_with_highest_5BLL_percent.csv")
+```
+
+
+```{r eval=FALSE, include=FALSE}
 df_map <-  df_5BLL %>% 
   filter(year == 2021) %>% 
   mutate(state = tolower(state))
@@ -332,14 +401,14 @@ df_map <-  df_5BLL %>%
 
 ```
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 states_map <- map_data("state")  # if using ggplot2::map_data
 map_data <- states_map %>%
   left_join(df_map, by = c("region" = "state")) 
 
 ```
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 
 ggplot(map_data, aes(x = long, y = lat, group = group, fill = min5BLL_pct)) +
   geom_polygon(color = "white") +
@@ -352,7 +421,7 @@ ggplot(map_data, aes(x = long, y = lat, group = group, fill = min5BLL_pct)) +
 
 ```
 
-<div style="min-height:400px" id="datawrapper-vis-q5PAp"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/q5PAp/embed.js" charset="utf-8" data-target="#datawrapper-vis-q5PAp"></script><noscript><img src="https://datawrapper.dwcdn.net/q5PAp/full.png" alt="" /></noscript></div>
+
 
 
 
