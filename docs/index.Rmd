@@ -29,7 +29,7 @@ The state of Maryland has BLL data at the county level for 2023.
 
 This story will also evaluate the efficacy of federal and state lead-abatement programs. Maryland, for example, has a few initiatives designed to track and mitigate child lead exposure: 
 
-1. A **mandatory lead testing program** implemented by state law in 2015 and 2016 requires all children at 12 months and 24 months to be tested for lead. This initiative has resulted in a much higher percentage (around 80%) lead testing requirement, resulting in much more complete datasets. Many states do not have mandatory lead testing and thus suffer from a lack of available data or data quality issues. 
+1. A **mandatory lead testing program** implemented by state law in 2015 and 2016 requires all children at 12 months and 24 months to be tested for lead. This initiative has resulted in a higher percentage of lead testing, but still, 100% of kids are not tested - around one-third of one- and two-year-olds are currently tested. Further, many states do not have mandatory lead testing and thus suffer from a lack of available data or data quality issues. 
 2. Maryland has a [Healthy Homes](https://health.maryland.gov/phpa/OEHFP/EH/pages/healthy-homes.aspx) program focuses on identifying and eliminating health hazards for all residents. Maryland also has a [program](https://health.maryland.gov/phpa/OEHFP/EH/Pages/LeadHomeVisiting.aspx) that helps families who have children with BLL > 3.5 ug/dL remove lead from their homes at no cost to the homeowner or resident. *Possible story angle: Are these programs effective? Why or why not? How do different state initiatives compare to one another, and which are most effective?*
 3. [Maryland's Reduction of Lead Risk in Housing Act](https://www.peoples-law.org/lead-paint-law-information-owners-and-sellers#landlord-duties) requires landlords who rent pre-1978 dwellings to register their properties, fulfill lead-free certification requirements, and pass a Lead Free inspection each time a tenant changes. *Possible story angle: Are landlords complying with this regulation? If not, which populations are being disproportionately impacted?* 
 
@@ -38,7 +38,7 @@ This story will also evaluate the efficacy of federal and state lead-abatement p
 
 **Note that for the purpose of this pitch, I will consider 5 µg/dL to be the threshold for "elevated" BLL because the CDC data only had data for 5 ug/dL and above for 2017 - 2021.** 
 
-*Context*<br> The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects. Before 2012, at or greater than **10 µg/dL** was the threshold for public intervention. was used to indicate that a child’s BLL was of concern. In 2012, the thresohold was changed to **5 ug/dL**, and in 2021, **3.5 ug/dL** became the new reference number. There is no safe level of lead in blood for children, the CDC says. <br>
+*Context*<br> The Centers for Disease Control and Prevention (CDC) has found that even a low blood lead level (BLL) can cause lifelong health effects. Before 2012, at or greater than **10 µg/dL** was the threshold for public intervention.  In 2012, the threshold was changed to **5 ug/dL**, and in 2021, **3.5 ug/dL** became the new reference number. There is no safe level of lead in blood for children, the CDC says. <br>
 
 
 
